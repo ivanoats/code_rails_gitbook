@@ -74,3 +74,23 @@ end
 ```
 ![sidkiq](images/web-ui.png)
 ( from [Sidekiq](https://github.com/mperham/sidekiq) )
+
+## Homework
+
+* Review https://appcasts.io/blog/writing-your-first-background-worker 
+
+* These railscasts may also be helpful:
+    * http://railscasts.com/episodes/171-delayed-job
+    * http://railscasts.com/episodes/271-resque
+    * http://railscasts.com/episodes/366-sidekiq
+
+* Pick one of the strategies used above.
+
+So, remember all those great outoging mailers we made last week?  They need to
+be called from a background job.
+
+Same goes for any other external services you are using, for example REST HTTP
+calls to other sites, or file uploads.
+
+* Turn in the assignment by making a Pull Request to your Portfolio Site as usual, on a feature branch named appropriately. 
+* Comment with "Done", a question or reflection, and let me know if you had collaborators.
