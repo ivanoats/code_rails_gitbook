@@ -1,9 +1,10 @@
 CACHE MANIFEST
-# Revision 1399954539021
+# Revision 1399956450068
 
 CACHE:
-index.html
 background_jobs.html
+index.html
+email_on_rails.html
 gitbook/app.js
 gitbook/fonts/anonymouspro/400.woff
 gitbook/fonts/anonymouspro/400i.woff

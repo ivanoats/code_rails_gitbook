@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
-        <title>Introduction | Code Rails</title>
+        <title>Email on Rails | Code Rails</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -13,11 +13,13 @@
         <meta name="generator" content="www.gitbook.io">
 
         
-        <link rel="next" href="./email_on_rails.html" />
+        <link rel="next" href="./background_jobs.html" />
         
+        
+        <link rel="prev" href="./index.html" />
         
 
-        <meta property="og:title" content="Introduction | Code Rails">
+        <meta property="og:title" content="Email on Rails | Code Rails">
         <meta property="og:site_name" content="Code Rails">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -40,7 +42,7 @@
 
 
         
-    <div class="book" data-github="ivanoats/code_rails_gitbook" data-level="0" data-basepath="." data-revision="1399956450067">
+    <div class="book" data-github="ivanoats/code_rails_gitbook" data-level="1" data-basepath="." data-revision="1399956450067">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -118,7 +120,7 @@
 
         
         <li>
-            <a href="https://github.com/ivanoats/code_rails_gitbook/edit/master/README.md" target="blank">Edit and Contribute</a>
+            <a href="https://github.com/ivanoats/code_rails_gitbook/edit/master/email_on_rails.md" target="blank">Edit and Contribute</a>
         </li>
         
 
@@ -163,13 +165,13 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 0%;min-width: 0%;"></div>
+        <div class="inner" style="width: 50%;min-width: 0%;"></div>
     </div>
     <div class="chapters">
     
         <a href="./index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
     
-        <a href="./email_on_rails.html" title="Email on Rails" class="chapter  new-chapter" data-progress="1" style="left: 50%;"></a>
+        <a href="./email_on_rails.html" title="Email on Rails" class="chapter done new-chapter" data-progress="1" style="left: 50%;"></a>
     
         <a href="./background_jobs.html" title="Background Jobs" class="chapter  new-chapter" data-progress="2" style="left: 100%;"></a>
     
@@ -178,16 +180,37 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_2">
+                    <section class="normal" id="section-gitbook_3">
                     
-                        <h1 id="summary">Summary</h1>
-<p>This is a book companion to <a href="https://twitter.com/brookr" target="_blank">Brook Riggio</a> and
-<a href="http://www.ivanstorck.com" target="_blank">Ivan Storck</a>&#39;s Ruby on Rails curriculum. It
-is taught at <a href="http://www.codefellows.org" target="_blank">Code Fellows</a> and
-<a href="http://www.pce.uw.edu/certificates/ruby-programming.html" target="_blank">UW PCE</a>.</p>
+                        <h1 id="email-on-rails">Email on Rails</h1>
+<script async class="speakerdeck-embed" data-id="1dcb446035d90131644176ede1a85f95" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
 <ul>
-<li><a href="email_on_rails.html">Email on Rails</a></li>
-<li><a href="background_jobs.html">Background Jobs</a></li>
+<li>Watch the Railscast on <a href="http://railscasts.com/episodes/219-active-model" target="_blank">Active Model</a></li>
+<li>Homework: Add a simple contact form to your portfolio.</li>
+<li>Watch / <a href="http://railscasts.com/episodes/350-rest-api-versioning?view=asciicast" target="_blank">Read Rails API versioning</a></li>
+<li>Send out some email from your Portfolio or Class Project, based on an
+appropriate controller action, like sign up, or a new post.</li>
+</ul>
+<p>Note: Rails, in development mode, will not actually send outgoing email. It will
+dump the text of the email to the development log. If you want a nice HTML
+preview of your outgoing mail, use Ryan Bates’ letter_opener gem. Here’s a
+<a href="http://www.sitepoint.com/preview-your-rails-mail-with-letter-opener/" target="_blank">tutorial</a> on how to use it.
+Also check out the Railscast on <a href="http://railscasts.com/episodes/61-sending-email-revised" target="_blank">Sending Email (revised)</a>.</p>
+<ul>
+<li>Homework: Process an incoming email via the
+<a href="https://devcenter.heroku.com/articles/postmark#using-postmark-inbound" target="_blank">Postmark API</a>
+(or other inbound email like <a href="https://devcenter.heroku.com/articles/sendgrid" target="_blank">Sendgrid</a>
+if you have more experience with that) For example, a special email on your
+domain for a contact request, or to create a new blog post. You&#39;ll need an email
+address on your own domain name (or @uw.edu) for this assignment. Postmark
+doesn&#39;t work with Gmail or Yahoo addresses.</li>
+</ul>
+<p>Example Code from class is in this pull request: <a href="https://github.com/UW-Advanced-Rails-2014/portfolio/pull/4" target="_blank">https://github.com/UW-Advanced-Rails-2014/portfolio/pull/4</a> </p>
+<ul>
+<li>Turn in the assignment by making a Pull Request to your code, as usual, on a
+feature branch named appropriately. </li>
+<li>Comment with &quot;Done&quot;, a question or reflection, and let me know if you had collaborators.</li>
 </ul>
 
                     
@@ -198,8 +221,10 @@ is taught at <a href="http://www.codefellows.org" target="_blank">Code Fellows</
         </div>
 
         
+        <a href="./index.html" class="navigation navigation-prev "><i class="fa fa-angle-left"></i></a>
         
-        <a href="./email_on_rails.html" class="navigation navigation-next navigation-unique"><i class="fa fa-angle-right"></i></a>
+        
+        <a href="./background_jobs.html" class="navigation navigation-next "><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
